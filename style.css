@@ -53,12 +53,12 @@
   list-style: none;
 }
 
-input,
-button {
+input {
   outline: none;
 }
 
 button {
+  outline: none;
   background: none;
   border: 0px;
   color: #888;
@@ -157,15 +157,12 @@ li > input[type="text"] {
 }
 
 /* Edit Task */
-li input[type=text] {
-  display: none;
-}
-
 .edit-mode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode label {
+.edit-mode label,
+li input[type=text] {
   display: none;
 }
