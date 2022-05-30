@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-.matrix .more-info {
+.matrix__more-info {
   font-family: fantasy, cursive;
 }
 
@@ -157,12 +157,12 @@ li > input[type="text"] {
 }
 
 /* Edit Task */
-.edit-mode input[type=text] {
+.todo-list__edit-mode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode label,
+.todo-list__edit-mode label,
 li input[type=text] {
   display: none;
 }
