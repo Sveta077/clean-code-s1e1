@@ -22,7 +22,8 @@
 
 @media (max-width: 768px) {
 
-  .matrix { text-align: center;
+  .matrix {
+    text-align: center;
   }
 
 }
@@ -36,7 +37,7 @@
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .task-row-wrapper {
@@ -136,7 +137,7 @@ li > label {
 }
 
 li > input[type="text"] {
-  width: 226px
+  width: 226px;
 }
 
 .delete img {
@@ -145,24 +146,24 @@ li > input[type="text"] {
   transition: transform 200ms ease-in;
 }
 
-.delete img :hover {
+.delete img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 #complet-tasks {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 li input[type=text] {
-  display: none
+  display: none;
 }
 
 .edit-mode input[type=text] {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .edit-mode label {
