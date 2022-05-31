@@ -28,19 +28,19 @@
 
 }
 
-.main-page-elem {
+.main-page {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.main-page__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.main-page__task-row-wrapper {
   display: flex;
 }
 
@@ -73,7 +73,7 @@ button:hover {
 }
 
 /* Heading */
-.label-text,
+.main-page__label-text,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;
