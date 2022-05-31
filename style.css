@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-.matrix .more-info {
+.matrix__more-info {
   font-family: fantasy, cursive;
 }
 
@@ -28,19 +28,19 @@
 
 }
 
-.main-page-elem {
+.main-page {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.main-page__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.main-page__task-row-wrapper {
   display: flex;
 }
 
@@ -57,7 +57,7 @@ input {
   outline: none;
 }
 
-button {
+.button {
   outline: none;
   background: none;
   border: 0px;
@@ -68,13 +68,13 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
-.label-text,
-label[for="new-task"] {
+.main-page__label-text,
+.label-new-task {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -102,7 +102,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+.label-new-task {
   display: block;
   margin: 0 0 20px;
 }
@@ -112,7 +112,7 @@ label[for="new-task"] {
 }
 
 /* Task list */
-li {
+.todo-list__todo-elem {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -121,32 +121,32 @@ li {
   align-items: center;
 }
 
-li > * {
+.todo-list__todo-elem > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.todo-list__todo-elem > input[type="checkbox"] {
   margin: 0 10px;
 }
 
-li > label {
+.todo-list__todo-elem > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li > input[type="text"] {
+.todo-list__todo-elem > input[type="text"] {
   width: 226px;
 }
 
-.delete img {
+.button-delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete img:hover {
+.button-delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -157,12 +157,12 @@ li > input[type="text"] {
 }
 
 /* Edit Task */
-.edit-mode input[type=text] {
+.todo-list__edit-mode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode label,
+.todo-list__edit-mode label,
 li input[type=text] {
   display: none;
 }
